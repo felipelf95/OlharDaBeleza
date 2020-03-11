@@ -18,6 +18,11 @@ namespace OlharDaBeleza.Controllers
             _logger = logger;
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();

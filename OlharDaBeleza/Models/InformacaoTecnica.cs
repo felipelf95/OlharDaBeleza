@@ -8,6 +8,7 @@ namespace OlharDaBeleza.Models
 {
     public class InformacaoTecnica
     {
+        public int id { get; set; }
         public TipoDeCabelo TipoDeCabelo { get; set; }
         public string Textura { get; set; }
         public string Densidade { get; set; }

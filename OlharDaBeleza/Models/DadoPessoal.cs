@@ -7,7 +7,7 @@ namespace OlharDaBeleza.Models
 {
     public class DadoPessoal
     {
-        
+        public int id { get; set; }
         public string Nome { get; set; }
         public string Sexo { get; set; }
         public int Idade { get; set; }

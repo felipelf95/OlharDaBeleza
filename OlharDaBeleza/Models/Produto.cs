@@ -10,15 +10,15 @@ namespace OlharDaBeleza.Models
         public int Cod { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
-        public DateTime Validade { get; set; }
+        public DateTime DataValidade { get; set; }
         public double Preco { get; set; }
 
-        public Produto(int cod, string nome, string descricao, DateTime validade, double preco)
+        public Produto(int cod, string nome, string descricao, DateTime dataValidade, double preco)
         {
             Cod = cod;
             Nome = nome;
             Descricao = descricao;
-            Validade = validade;
+            DataValidade = dataValidade;
             Preco = preco;
         }
 
