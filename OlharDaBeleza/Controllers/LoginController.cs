@@ -8,9 +8,14 @@ namespace OlharDaBeleza.Controllers
 {
     public class LoginController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
+        }
+
+        public IActionResult Validation()
+        {
+            if 
         }
     }
 }
