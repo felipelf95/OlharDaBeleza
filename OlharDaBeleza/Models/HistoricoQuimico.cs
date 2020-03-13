@@ -7,16 +7,17 @@ namespace OlharDaBeleza.Models
 {
     public class HistoricoQuimico
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public DateTime UltimoServico { get; set; }
         public string EspecificacaoDoUltimoServico { get; set; }
         public string RespectivosProfissionais { get; set; }
         public string QuimicaUtilizada { get; set; }
 
-        public HistoricoQuimico(DateTime ultimoServico, string especificacoesDoUltimoServico, string respectivosProfissionais, string quimicaUtilizada)
+        public HistoricoQuimico( int id, DateTime ultimoServico, string especificacoesDoUltimoServico, string respectivosProfissionais, string quimicaUtilizada)
         {
+            Id = id;
             UltimoServico = ultimoServico;
-            especificacoesDoUltimoServico = especificacoesDoUltimoServico;
+            EspecificacaoDoUltimoServico = especificacoesDoUltimoServico;
             RespectivosProfissionais = respectivosProfissionais;
             QuimicaUtilizada = quimicaUtilizada;
         }

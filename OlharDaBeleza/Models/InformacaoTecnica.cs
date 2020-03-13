@@ -8,7 +8,7 @@ namespace OlharDaBeleza.Models
 {
     public class InformacaoTecnica
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public TipoDeCabelo TipoDeCabelo { get; set; }
         public string Textura { get; set; }
         public string Densidade { get; set; }
@@ -16,8 +16,9 @@ namespace OlharDaBeleza.Models
         public string Elasticidade { get; set; }
         public string CondicaoCouroCabeludo { get; set; }
 
-        public InformacaoTecnica(TipoDeCabelo tipoDeCabelo, string textura, string densidade, string porosidade, string elasticidade, string condicaoCouroCabeludo)
+        public InformacaoTecnica(int id, TipoDeCabelo tipoDeCabelo, string textura, string densidade, string porosidade, string elasticidade, string condicaoCouroCabeludo)
         {
+            Id = id;
             TipoDeCabelo = tipoDeCabelo;
             Textura = textura;
             Densidade = densidade;

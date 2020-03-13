@@ -1,19 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OlharDaBeleza.Models;
 
-namespace OlharDaBeleza.Data
+namespace OlharDaBeleza.Controllers
 {
-    public class OlharDaBelezaContext : DbContext
+    public class OlharDaBelezaContext :DbContext
     {
-        public OlharDaBelezaContext (DbContextOptions<OlharDaBelezaContext> options)
+
+        public OlharDaBelezaContext(DbContextOptions<OlharDaBelezaContext> options)
             : base(options)
         {
         }
 
-        public DbSet<OlharDaBeleza.Models.DadoPessoal> DadoPessoal { get; set; }
+        public DbSet<DadoPessoal> DadoPessoal { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<HistoricoQuimico> HistoricoQuimico { get; set; }
+        public DbSet<InformacaoTecnica> InformacaoTecnica { get; set; }
+
+
+        
     }
 }
